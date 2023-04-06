@@ -6,9 +6,11 @@
 
     {% for post in object_list %}
         <div class="container">
-            <h3 class="text-bg-dark text-center font-monospace">{{post.title}}</h3>
-            <p class="font-monospace text-center">{{post.body}}</p>
+            <a href="{% url 'post_detail' post.pk %}" class="btn btn-primary text-bg-warning text-lg-center text-decoration-none font-monospace">{{post.title}}</a>
+            <p class="font-monospace">{{post.body}}</p>
         </div>
     {% endfor %}
+
+
 {% endblock content %}
 
