@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1 class="container text-dark-emphasis text-center font-monospace text-bg-light">Django Blog</h1>
+
+    {% for post in object_list %}
+        <div class="container">
+            <h3 class="text-bg-dark text-center font-monospace">{{post.title}}</h3>
+            <p class="font-monospace text-center">{{post.body}}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}
+
