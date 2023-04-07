@@ -6,7 +6,7 @@
 
     {% for post in object_list %}
         <div class="container">
-            <a href="{% url 'post_detail' post.pk %}" class="btn btn-primary text-bg-warning text-lg-center text-decoration-none font-monospace">{{post.title}}</a>
+            <a href="{% url 'post_detail' post.pk %}" class="text-decoration-none font-monospace">{{post.title}}</a>
             <p class="font-monospace">{{post.body}}</p>
         </div>
     {% endfor %}

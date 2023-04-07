@@ -6,3 +6,4 @@ class SignupView(CreateView):
     template_name = 'registration/signup.html'
     success_url = reverse_lazy('home')
     form_class = UserCreationForm
+

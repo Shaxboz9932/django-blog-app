@@ -2,6 +2,8 @@
 
 {% block content %}
     <div class="container">
+        <h3>Create Post</h3>
+        <br>
         <form action="" method="post">
             {% csrf_token %}
             {{ form.as_p }}
